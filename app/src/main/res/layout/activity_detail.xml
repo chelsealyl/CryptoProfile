@@ -7,14 +7,14 @@
     tools:context=".DetailActivity">
 
     <TextView
-        android:id="@+id/tvMessage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/coin_name_text"
+        android:layout_width="190dp"
+        android:layout_height="31dp"
         android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
         android:text="@string/textview_message"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/coin_image" />
 
     <Button
         android:id="@+id/btnUrl"
@@ -23,7 +23,140 @@
         android:text="@string/button_url"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMessage" />
+        app:layout_constraintTop_toBottomOf="@+id/coin_name_text"
+        app:layout_constraintVertical_bias="0.73" />
+
+    <ImageView
+        android:id="@+id/coin_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/value_USA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coin_image" />
+
+    <TextView
+        android:id="@+id/coin_symbol_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/coin_name_text"
+        app:layout_constraintTop_toBottomOf="@+id/coin_name_text" />
+
+    <TextView
+        android:id="@+id/change1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/change1h"
+        app:layout_constraintStart_toStartOf="@+id/value_USA"
+        app:layout_constraintTop_toBottomOf="@+id/value_USA" />
+
+    <TextView
+        android:id="@+id/change24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/change24h"
+        app:layout_constraintStart_toStartOf="@+id/value_USA"
+        app:layout_constraintTop_toBottomOf="@+id/change1" />
+
+    <TextView
+        android:id="@+id/change7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/change7d"
+        app:layout_constraintStart_toStartOf="@+id/value_USA"
+        app:layout_constraintTop_toBottomOf="@+id/change24" />
+
+    <TextView
+        android:id="@+id/marketcap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/marketcap"
+        app:layout_constraintStart_toStartOf="@+id/value_USA"
+        app:layout_constraintTop_toBottomOf="@+id/change7" />
+
+    <TextView
+        android:id="@+id/volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/volume"
+        app:layout_constraintStart_toStartOf="@+id/value_USA"
+        app:layout_constraintTop_toBottomOf="@+id/marketcap" />
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/coin_name_text"
+        app:layout_constraintTop_toTopOf="@+id/value_USA" />
+
+    <TextView
+        android:id="@+id/change1h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/coin_name_text"
+        app:layout_constraintTop_toTopOf="@+id/change1" />
+
+    <TextView
+        android:id="@+id/change24h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/coin_name_text"
+        app:layout_constraintTop_toTopOf="@+id/change24" />
+
+    <TextView
+        android:id="@+id/change7d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/coin_name_text"
+        app:layout_constraintTop_toTopOf="@+id/change7" />
+
+    <TextView
+        android:id="@+id/marketcap_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/coin_name_text"
+        app:layout_constraintTop_toTopOf="@+id/marketcap" />
+
+    <TextView
+        android:id="@+id/volume24h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/coin_name_text"
+        app:layout_constraintTop_toTopOf="@+id/volume" />
+
+    <ImageButton
+        android:id="@+id/search_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/coin_image"
+        app:srcCompat="@android:drawable/ic_menu_search" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

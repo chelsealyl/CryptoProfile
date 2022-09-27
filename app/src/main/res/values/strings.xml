@@ -4,4 +4,10 @@
     <string name="button_url">Open URL</string>
     <string name="button_launch">Launch Detail Activity</string>
     <string name="textview_message">Message</string>
+    <string name="value">Value(USA)</string>
+    <string name="change1h">Change(1h)</string>
+    <string name="change24h">Change(24h)</string>
+    <string name="change7d">Change(7d)</string>
+    <string name="marketcap">Marketcap</string>
+    <string name="volume">Volume(24h)</string>
 </resources>
